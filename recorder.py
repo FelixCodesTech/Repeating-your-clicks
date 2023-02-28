@@ -6,7 +6,7 @@ clicks = []
 def esc():
     print('esc was pressed')
     if len(clicks) > 0:
-        with open("clicks", "w") as file:
+        with open("clicks.txt", "w") as file:
             for click in clicks:
                 file.write(f"{str(click)[1:-1]}\n")
     else:
