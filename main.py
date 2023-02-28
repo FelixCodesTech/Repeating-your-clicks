@@ -9,6 +9,8 @@ def esc():
         with open("clicks", "w") as file:
             for click in clicks:
                 file.write(f"{str(click)[1:-1]}\n")
+    else:
+        print("That list of clicks is empty 🧐")
     quit()
 
 key.add_hotkey('esc', esc)
