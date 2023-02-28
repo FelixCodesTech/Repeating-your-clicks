@@ -13,6 +13,10 @@ for sec in range(3):
 
 for click in clicks:
     x, y = str(click).split(",")
+    if x == "0":
+        x = 1
+    elif y == "0":
+        y = 1
     pygui.moveTo(x=int(x), y=int(y), duration=0.5)
     pygui.click()
 
